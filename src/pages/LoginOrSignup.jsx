@@ -4,7 +4,8 @@ axios.defaults.withCredentials = true;
 import { useNavigate } from "react-router-dom";
 import { useLogin } from "../context/LoginContext";
 import { useToast } from "../context/ToastContext";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
 
 function LoginOrSignup({ darkMode, toggleDarkMode }) {
   const navigate = useNavigate();
