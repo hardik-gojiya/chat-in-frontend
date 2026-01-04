@@ -1,0 +1,46 @@
+@import "tailwindcss";
+/* Custom Scrollbar */
+button[class^="react-scroll-to-bottom--css"] {
+  @apply text-white h-7 w-7 overflow-hidden   rounded-full shadow-md hover:bg-blue-700 transition-all;
+}
+button[class^="react-scroll-to-bottom--css"]::after {
+  content: "▼";
+  padding: 1px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-glow {
+  transition: all 0.3s ease-in-out;
+}
+.btn-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+button {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
